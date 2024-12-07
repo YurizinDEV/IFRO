@@ -25,3 +25,4 @@ var Cor;
 })(Cor || (Cor = {}));
 let corEscolhida = Cor.Red;
 console.log(`Cor escolhida: ${corEscolhida}`);
+//Testando commit

@@ -1,4 +1,3 @@
-import { alunos } from './seeds/estudantesSeeds';
 /*Enum Estados
 Interface Cidades
 Interface Estudantes {id(uuid), nome, email, cidade/estados}
@@ -21,23 +20,25 @@ catch(err){
 let linhas: string[] = []; 
 
 function inserirAluno (Aluno: Estudantes){
-    linhas.push(`${alunos[Aluno].id};${alunos[0].nome};${alunos[0].email};${alunos[0].cidade.nome};${alunos[0].cidade.estado}`);
+    linhas.push(`${Aluno.id};${Aluno.nome};${Aluno.email};${Aluno.cidade.nome};${Aluno.cidade.estado}`);
     try{
         fs.writeFileSync(filePath, linhas.join("\n"));
-        console.log("Arquivo atualizado com sucesso!");
+        console.log("\n----------- Arquivo atualizado com sucesso! ----------");
+        linhas.forEach((linha, key) => console.log(`${key} - ${linha}`));
     }
     catch(err){
         console.error(`${(err as Error).message}`);
     }
 }
 
-inserirAluno(1);
+inserirAluno(alunos[0]);
+inserirAluno(alunos[1]);
 
 
 
 
 
-linhas.forEach((linha, key) => console.log(`${key} - ${linha}`));
+
 
 
 

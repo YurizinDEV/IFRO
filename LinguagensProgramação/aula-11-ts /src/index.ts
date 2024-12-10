@@ -1,6 +1,14 @@
-import fs from 'fs';
+import { alunos } from './seeds/estudantesSeeds';
+/*Enum Estados
+Interface Cidades
+Interface Estudantes {id(uuid), nome, email, cidade/estados}
+gravar em um arquivo com ; separando os dados dos estudantes*/
 
-const filePath: string = './data/estudante.txt';
+import fs from 'fs';
+import { alunos } from "./seeds/estudantesSeeds";
+import { Estudantes } from './models/estudantes';
+
+const filePath: string = './data/Estudantes.txt';
 let conteudo: string = "";
 
 try{
@@ -12,24 +20,24 @@ catch(err){
 
 let linhas: string[] = []; 
 
-if (conteudo){
-    linhas = conteudo.split("\n");
-    //console.log(linhas[0]);
-    //console.log(linhas.length);
-    linhas.push('Emilia');
-    linhas.push("Teste1");
-    linhas.push("Teste2");
-    linhas.push("Teste3");
-    linhas.push("Teste4");
-    //console.log(`Tamahnho do array: ${linhas.length}`);
-    //console.log(linhas[5]);
-    linhas.forEach((linha, key) => console.log(`${key} - ${linha}`));
+function inserirAluno (Aluno: Estudantes){
+    linhas.push(`${alunos[Aluno].id};${alunos[0].nome};${alunos[0].email};${alunos[0].cidade.nome};${alunos[0].cidade.estado}`);
+    try{
+        fs.writeFileSync(filePath, linhas.join("\n"));
+        console.log("Arquivo atualizado com sucesso!");
+    }
+    catch(err){
+        console.error(`${(err as Error).message}`);
+    }
 }
 
-try{
-    fs.writeFileSync(filePath, linhas.join("\n"));
-    console.log("Arquivo atualizado com sucesso!");
-}
-catch(err){
-    console.error(`${(err as Error).message}`);
-}
+inserirAluno(1);
+
+
+
+
+
+linhas.forEach((linha, key) => console.log(`${key} - ${linha}`));
+
+
+

@@ -1,7 +1,7 @@
 import { Cidades } from "./cidades";
 
 export interface Estudantes {
-    id: number;
+    id: string;
     nome: string;
     email: string;
     cidade: Cidades;

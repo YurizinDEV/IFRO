@@ -1,4 +1,3 @@
-// index.ts  
 import { Command } from 'commander';
 import {cadastrar} from './commands/cadastrar';
 import {listar} from './commands/listar';

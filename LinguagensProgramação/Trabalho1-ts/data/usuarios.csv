@@ -1,5 +1,5 @@
 id;nome;email;senha;papel;dataCadastro;dataUltimaAlteracao;status
-3e24b2b8-b8e0-49d7-9d3c-280058783b7d;Admin;admin@example.com;$2b$10$v6mDCdHRDZm4h93nijuW2ejoCsVKEqaOLK6/6Z/CINnQYVKAM8.o.;Administrador;2024-12-17T00:07:42.884Z;2024-12-17T00:07:42.884Z;true
-f8d78704-b784-4aa9-b528-d5f228e896c3;João Silva;joao.silva@example.com;senha123;Convidado;2024-12-17T00:07:42.884Z;2024-12-17T00:07:42.884Z;true
-8cfe02e2-71a5-4f3f-888a-06fdf3ceaa4b;Maria Souza;maria.souza@example.com;senha456;Convidado;2024-12-17T00:07:42.884Z;2024-12-17T00:07:42.884Z;true
-60c4b73c-b75c-46c6-8446-7969b62cb5e0;Pedro Oliveira;pedro.oliveira@example.com;senha789;Professor;2024-12-17T00:07:42.884Z;2024-12-17T00:07:42.884Z;false
+3b3aef99-4eee-4cfe-9b85-0a23b2cab74a;Admin;admin@example.com;$2b$10$NSh0enJmYoG2S/AuB7DyHeCjjFfONM5US2dcG6E/KMFRbfx2f76ty;Administrador;2024-12-17T00:32:29.824Z;2024-12-17T00:32:29.824Z;true
+f59a4842-1db1-47cf-b5a5-de6765ab97c3;João Silva;joao.silva@example.com;senha123;Convidado;2024-12-17T00:32:29.824Z;2024-12-17T00:32:29.824Z;true
+89c5e115-da5f-4829-808d-f78e49d78967;Maria Souza;maria.souza@example.com;senha456;Convidado;2024-12-17T00:32:29.824Z;2024-12-17T00:32:29.824Z;true
+d9ec4bfe-9bba-4cb6-8f82-5796a2eb9bdb;Pedro Oliveira;pedro.oliveira@example.com;senha789;Professor;2024-12-17T00:32:29.824Z;2024-12-17T00:32:29.824Z;false
